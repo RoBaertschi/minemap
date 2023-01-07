@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "minemap",
+  "version": "${version}",
+  "name": "Minemap",
+  "description": "Google Map UI for Block Game.",
+  "authors": [
+    "RoBaertschi"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/minemap/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "robaertschi.minemap.client.MinemapClient"
+    ],
+    "main": [
+      "robaertschi.minemap.Minemap"
+    ]
+  },
+  "mixins": [
+    "minemap.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.12",
+    "fabric": "*",
+    "minecraft": "1.18.2"
+  }
+}
